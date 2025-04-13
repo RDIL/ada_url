@@ -1,0 +1,28 @@
+module AdaUrl
+  VERSION: String
+
+  class Url
+    def initialize: (String url) -> self
+
+    def valid?: -> bool
+
+    def href: -> String
+    def username: -> String
+    def password: -> String
+    def port: -> String
+    def hash: -> String
+    def host: -> String
+    def hostname: -> String
+    def pathname: -> String
+    def search: -> String
+    def protocol: -> String
+
+    def host_type: -> (:common | :ipv4 | :ipv6)
+
+    def common_host_type?: -> bool
+    def ipv4?: -> bool
+    def ipv6?: -> bool
+
+    def validate!: -> void
+  end
+end
