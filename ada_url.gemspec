@@ -8,8 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["Reece Dunham"]
   spec.email = ["me@rdil.rocks"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
+  spec.summary = "A Gem wrapper around the Ada URL parser."
   spec.homepage = "https://github.com/RDIL/ada_url"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 3.1.0"
@@ -29,8 +28,6 @@ Gem::Specification.new do |spec|
         f.start_with?(*%w[bin/ test/ spec/ features/ .git appveyor Gemfile])
     end
   end
-  spec.bindir = "exe"
-  spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
   spec.extensions = ["ext/ada_url/extconf.rb"]
 
